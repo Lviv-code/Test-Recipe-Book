@@ -1,0 +1,86 @@
+.title {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(224, 224, 224);
+  justify-content: space-between;
+}
+
+.recipe {
+  margin-top: 10px;
+}
+
+h3 {
+
+  padding: 5px 10px;
+}
+
+.created>p {
+  font-weight: 700;
+  margin: 20px 10px 0px 10px;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+
+}
+p{
+  margin: 0; 
+}
+button {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  padding: 10px 10px;
+  outline: 0;
+  margin: 5px 5px 15px 5px;
+}
+
+button:hover {
+  background-color: #e0a800;
+}
+@media only screen and (min-width : 320px) and (max-width : 540px) {
+  h3 {
+    font-size: 22px;
+    padding: 3px 10px 0 10px;
+  }
+
+  .created>p {
+    margin: 10px 10px 0px 10px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 7px 6px;
+    margin: 3px;
+  }
+  button>span {
+    display: none;
+  }
+  .descreption{
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 540px) {
+  h3 {
+    font-size: 22px;
+    padding: 3px 10px 0 10px;
+  }
+
+  .created>p {
+    margin: 10px 10px 0px 10px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 7px 6px;
+    margin: 3px;
+  }
+  button>span {
+    display: none;
+  }
+  .descreption{
+    font-size: 13px;
+  }
+}

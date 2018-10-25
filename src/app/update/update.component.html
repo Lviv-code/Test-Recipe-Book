@@ -1,0 +1,19 @@
+<div class="container">
+
+  <form action="" (submit)="updateRecipe()" #form [formGroup]="recipeForm">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-12 col">
+        <label>Title for the recipe:
+          <input type="text" formControlName="title" [ngClass]="{'invallid':recipeForm.get('title').invalid && recipeForm.get('title').dirty}">
+        </label>
+
+        <label>Recipe:
+          <textarea type="text" cols="30" rows="10" formControlName="recipeDescreption" [ngClass]="{'invallid':recipeForm.get('recipeDescreption').invalid && recipeForm.get('recipeDescreption').dirty}"></textarea>
+        </label>
+      </div>
+      <button class="button" type="submit" 
+        [disabled]="recipeForm.invalid"         
+        routerLinkActive="router-link-active">Update</button>
+    </div>
+  </form>
+</div>

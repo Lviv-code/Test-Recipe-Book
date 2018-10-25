@@ -1,0 +1,30 @@
+.container {
+  margin-top: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  padding: 4px 10px;
+  outline: 0;
+  margin: 15px;
+}
+
+.button:hover {
+  background-color: #e0a800;
+}
+
+.invallid {
+  border: 1px solid red !important;
+}
+
+input,
+textarea {
+  outline: 0;
+}
